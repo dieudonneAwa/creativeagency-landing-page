@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { setColor } from '../../globals/GlobalStyles';
+import { setColor, screens } from '../../globals/GlobalStyles';
 
 export const ServicesWrapper = styled.div`
   height: 120vh;
@@ -51,4 +51,14 @@ export const ServicesWrapper = styled.div`
       }
     } 
   }
+
+    ${screens.tablet`
+        padding: 180px 190px 100px 190px;
+
+        .services-and-portfolio {
+          h1 {
+            font-size: 4rem;
+          }
+        }
+    `}
 `;

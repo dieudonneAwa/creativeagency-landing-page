@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { setColor } from '../../globals/GlobalStyles';
+import { setColor, screens } from '../../globals/GlobalStyles';
 
 export const ContactUsWrapper = styled.div`
   height: 420px;
@@ -10,6 +10,7 @@ export const ContactUsWrapper = styled.div`
   .contact-container {
     background-image: url('bg-contact-us.svg');
     background-size: cover;
+    margin-bottom: -100px;
     width: 40%;
     height: 100%;
     display: flex;
@@ -59,8 +60,32 @@ export const ContactUsWrapper = styled.div`
         color: #fff;
         width: 100px;
         margin: 0 0 0 30px;
-        box-shadow: 0 10 10px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+
+        &:hover {
+          box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+          cursor: pointer;
+          transition: all .3s ease-out;
+        }
       }
     }
   }
+
+
+  ${screens.tablet`
+    .contact-container {
+      .section-header {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 650px;
+        h5 {
+          font-size: 1.3rem;
+        }
+        h1 {
+          font-size: 1.6rem;
+          color: ${setColor.primaryColor};
+          line-height: 35px;
+        }
+      }
+  `}
 `;

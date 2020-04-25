@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { setColor } from '../../globals/GlobalStyles';
+import { setColor, screens } from '../../globals/GlobalStyles';
 import { Facebook } from 'styled-icons/boxicons-logos';
 import { Twitter } from 'styled-icons/boxicons-logos';
 import { Dribbble } from 'styled-icons/boxicons-logos';
@@ -122,6 +122,45 @@ export const TeamWrapper = styled.div`
       border: 1px solid ${setColor.primaryColor};
       border-radius: 50px;
       box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+
+      &:hover {
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+        cursor: pointer;
+        transition: all .3s ease-out;
+      }
     }
   }
+
+  ${screens.tablet`
+      margin-bottom: 40px;
+
+      .section-header {
+        h5 {
+          font-size: 1.1rem;
+        }
+        h1 {
+          font-size: 2.4rem;
+        }
+      }
+
+      .team-members {
+        .bg-team {
+          h1 {
+            font-size: 17rem;
+          }
+        }
+
+        .team-dots {
+          transform: translateX(90%);
+        }
+
+        .jam-potrick, .ema-jonas, .mike-pens {
+          margin: 0 10px;
+        }
+        img.member-imgs {
+          height: 400px;
+          width: 250px;
+        }
+      }
+  `}
 `;

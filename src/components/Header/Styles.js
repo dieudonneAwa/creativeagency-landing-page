@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 import { PlayCircle } from 'styled-icons/fa-solid';
 import { CloseCircle } from 'styled-icons/evaicons-solid';
-import { setColor } from '../../globals/GlobalStyles';
+import { setColor, screens } from '../../globals/GlobalStyles';
 
 export const PlayButtonIcon = styled(PlayCircle)`
   width: 75px;
   color: ${setColor.primaryColor};
   margin-left: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+
+  &:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all .5s ease-out;
+  }
 `;
 
 export const HeaderWrapper = styled.header`
@@ -66,7 +74,6 @@ export const HeaderWrapper = styled.header`
     }
   }
 
-
   .side-img {
     flex-basis: 50%;
     img {
@@ -76,6 +83,29 @@ export const HeaderWrapper = styled.header`
       transform: translateY(-20%);
     }
   }
+
+  ${screens.tablet`
+    .jumbotron {
+      .intro {
+        .creative {
+          max-width: 130px;
+          h1 {
+            margin-top: 380px;
+            transform-origin: 50px;
+            font-size: 9.5rem;
+          }
+        }
+        .creative-agency {
+          max-width: calc(100% - 170px);
+          .header-text {
+            h1 {
+              font-size: 5.5rem;
+            }
+          }
+        }
+      }
+    }
+  `}
 `;
 
 
@@ -91,7 +121,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 120px;
-  padding: 0 170px;
+  padding: 0 12%;
 
   .brand {
     display:flex;
@@ -99,7 +129,10 @@ export const Nav = styled.nav`
     font-size: 1.4rem;
     font-weight: 600;
     color: ${setColor.darkBlue};
-    flex-basis: 45%
+    flex-basis: 45%;
+    &:hover {
+      cursor: pointer;
+    }
   }
   
   ul {
@@ -140,4 +173,15 @@ export const Nav = styled.nav`
       }
     }
   }
+
+  ${screens.tablet`
+    padding: 0 17%;
+
+    .brand {
+      flex-basis: 25%;
+    }
+    ul {
+      flex-basis: 75%;
+    }
+  `}
 `;
