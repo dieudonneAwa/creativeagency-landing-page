@@ -122,6 +122,12 @@ export const TeamWrapper = styled.div`
       border: 1px solid ${setColor.primaryColor};
       border-radius: 50px;
       box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+
+      &:hover {
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+        cursor: pointer;
+        transition: all .3s ease-out;
+      }
     }
   }
 `;

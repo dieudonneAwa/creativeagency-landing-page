@@ -60,7 +60,13 @@ export const ContactUsWrapper = styled.div`
         color: #fff;
         width: 100px;
         margin: 0 0 0 30px;
-        box-shadow: 0 10 10px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+
+        &:hover {
+          box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+          cursor: pointer;
+          transition: all .3s ease-out;
+        }
       }
     }
   }

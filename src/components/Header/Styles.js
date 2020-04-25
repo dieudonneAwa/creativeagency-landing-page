@@ -7,6 +7,14 @@ export const PlayButtonIcon = styled(PlayCircle)`
   width: 75px;
   color: ${setColor.primaryColor};
   margin-left: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+
+  &:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all .5s ease-out;
+  }
 `;
 
 export const HeaderWrapper = styled.header`
@@ -99,7 +107,10 @@ export const Nav = styled.nav`
     font-size: 1.4rem;
     font-weight: 600;
     color: ${setColor.darkBlue};
-    flex-basis: 45%
+    flex-basis: 45%;
+    &:hover {
+      cursor: pointer;
+    }
   }
   
   ul {
