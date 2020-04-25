@@ -28,6 +28,7 @@ export const TeamWrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+  margin-bottom: 50px;
 
   .section-header {
     margin-top: 115px;
