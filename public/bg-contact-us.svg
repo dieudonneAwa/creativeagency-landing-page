@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="739.397" height="585.566" viewBox="0 0 739.397 585.566">
+  <g id="shape_line" data-name="shape / line" transform="translate(2930.698 -200.132) rotate(90)" opacity="0.48">
+    <path id="line_01" d="M558.423,2192.008l-1.414,1.414,26.569,26.568,1.414-1.415Z" fill="#9a97f8" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    <path id="line_02" d="M281.6,2386.448A11.935,11.935,0,0,1,277,2377c.116-6.408,5.932-11.835,12-12a11.663,11.663,0,0,1,7.688,2.786" fill="rgba(0,0,0,0)" stroke="#0ae4f2" stroke-width="3"/>
+    <path id="line_03" d="M222,2511H201l10.5-18,10.5,18m-16.808-2.4h12.62l-6.31-10.821-6.31,10.821" fill="#9a97f8" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    <path id="line_04" d="M308.423,2512.008l-1.414,1.415,16.568,16.568,1.414-1.414Z" fill="#f95151" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    <path id="line_05" d="M266.423,2689.008l-1.414,1.414,56.569,56.568,1.414-1.414Z" fill="#0fc565" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    <path id="line_06" d="M373.258,2917.394l-17.234,11.99-1.664-20.772,18.9,8.782m-15.167,7.631,10.36-7.208-11.36-5.279,1,12.487" fill="#f48f23" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    <path id="line_07" d="M603.423,2912.008l-1.414,1.414,16.568,16.569,1.414-1.415Z" fill="#1ccee3" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    <path id="line_08" d="M748.423,2882.008l-1.414,1.415,36.569,36.568,1.414-1.414Z" fill="#9a97f8" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    <g id="line_09" transform="translate(707 2635)" fill="rgba(0,0,0,0)" stroke="#9fd915" stroke-width="3">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="10.5" fill="none"/>
+    </g>
+    <path id="line_10" d="M672.687,2469l-.683.682,27.309,27.309.683-.683Z" fill="#ced007" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+  </g>
+</svg>
