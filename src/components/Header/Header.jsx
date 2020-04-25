@@ -11,7 +11,9 @@ const Header = () => (
           <h1>creative</h1>
         </div>
         <div className="creative-agency">
-          <h1>creative</h1><h1>agency</h1>
+          <div className="header-text">
+            <h1>creative</h1><h1>agency</h1>
+          </div>
           <div className="watch-btn">
             <PlayButtonIcon />
             <span>watch a video intro</span>
