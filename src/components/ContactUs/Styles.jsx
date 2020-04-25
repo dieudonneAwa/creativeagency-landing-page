@@ -10,6 +10,7 @@ export const ContactUsWrapper = styled.div`
   .contact-container {
     background-image: url('bg-contact-us.svg');
     background-size: cover;
+    margin-bottom: -100px;
     width: 40%;
     height: 100%;
     display: flex;

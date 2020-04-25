@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Services from './Services/Services';
 import Team from './Team/Team';
 import ContactUs from './ContactUs/ContactUs';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Services />
       <Team />
       <ContactUs />
-      {/* App */}
+      <Footer />
     </div>
   );
 }
