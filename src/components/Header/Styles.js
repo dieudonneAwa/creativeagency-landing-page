@@ -4,14 +4,14 @@ import { CloseCircle } from 'styled-icons/evaicons-solid';
 import { setColor } from '../../globals/GlobalStyles';
 
 export const PlayButtonIcon = styled(PlayCircle)`
-  width: 50px;
+  width: 75px;
   color: ${setColor.primaryColor};
   margin-left: 5px;
 `;
 
 export const HeaderWrapper = styled.header`
   position: relative;
-  height: 650px;
+  height: 100vh;
 
   .jumbotron {
     height: 100%;
@@ -24,11 +24,11 @@ export const HeaderWrapper = styled.header`
       .creative {
         max-width: 170px;
         h1 {
-          margin-top: 400px;
+          margin-top: 405px;
           font-weight: 400;
           transform-origin: 70px;
           transform: rotate(-90deg);
-          font-size: 9rem;
+          font-size: 11rem;
           color: ${setColor.primaryColor};
           opacity: .1;
         }
@@ -36,23 +36,27 @@ export const HeaderWrapper = styled.header`
       .creative-agency {
         max-width: calc(100% - 170px);
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
-        flex-flow: column-reverse nowrap;
+        flex-flow: column nowrap;
   
-        h1 {
-          color: ${setColor.primaryColor};
-          font-size: 4.5rem;
-          line-height: -32px;
-          font-weight: 500;
-          margin-top: -200px;
+        .header-text {
+          margin-top: 75px;
+          h1 {
+            color: ${setColor.primaryColor};
+            font-size: 6.4rem;
+            font-weight: 400;
+            &:last-child {
+              margin-top: -50px;
+            }
+          }
         }
         .watch-btn {
           display: flex;
           justify-content: center;
   
           span {
-            padding: 15px;
+            padding: 25px;
             color: ${setColor.darkBlue};
             letter-spacing: -0.6px;
             font-weight: 500;
